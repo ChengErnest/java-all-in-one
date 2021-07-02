@@ -8,7 +8,9 @@
 	<version>1.0.0</version>
 	<modules>
 		<module>rabbitmq</module>
-	</modules>
+		<module>btrace</module>
+        <module>activemq</module>
+    </modules>
 	<packaging>pom</packaging>
 	<name>java-all-in-one</name>
 	<description>java-all-in-one</description>
