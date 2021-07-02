@@ -1,4 +1,4 @@
-package cn.nicollcheng.rabbitmq.listener;
+package cn.nicollcheng.rabbitmq.listener.direct;
 
 import cn.nicollcheng.rabbitmq.RabbitMQConfig;
 import org.springframework.amqp.rabbit.annotation.Queue;
@@ -20,8 +20,8 @@ import java.util.Map;
  */
 @Component
 //使用queuesToDeclare属性，如果不存在则会创建队列
-@RabbitListener(queuesToDeclare = @Queue(RabbitMQConfig.RABBITMQ_DEMO_TOPIC))
-public class RabbitmqListener {
+@RabbitListener(queuesToDeclare = @Queue(RabbitMQConfig.RABBITMQ_DIRECT_TOPIC))
+public class RabbitmqDirectListener {
 
     @RabbitHandler
     public void process(Map map){
