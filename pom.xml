@@ -11,6 +11,7 @@
 		<module>btrace</module>
         <module>activemq</module>
 		<module>kafka</module>
+        <module>zookeeper</module>
 	</modules>
 	<packaging>pom</packaging>
 	<name>java-all-in-one</name>
