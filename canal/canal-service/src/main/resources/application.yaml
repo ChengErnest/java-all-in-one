@@ -1,0 +1,15 @@
+server:
+  port: 8081
+spring:
+  cloud:
+    zookeeper:
+      connect-string: localhost:2181
+  application:
+    name: canal-service
+canal:
+  server: 127.0.0.1:11111
+  destination: example
+
+logging:
+  level:
+    top.javatool.canal.client.client: OFF

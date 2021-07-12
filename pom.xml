@@ -13,6 +13,7 @@
 		<module>kafka</module>
         <module>zookeeper</module>
         <module>seata</module>
+        <module>canal</module>
     </modules>
 	<packaging>pom</packaging>
 	<name>java-all-in-one</name>
