@@ -12,6 +12,7 @@
         <module>activemq</module>
 		<module>kafka</module>
         <module>zookeeper</module>
+        <module>seata</module>
     </modules>
 	<packaging>pom</packaging>
 	<name>java-all-in-one</name>

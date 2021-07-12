@@ -1,0 +1,6 @@
+logging:
+  level:
+    org:
+      apache:
+        zookeeper:
+          server: OFF

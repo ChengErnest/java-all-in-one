@@ -1,0 +1,16 @@
+server:
+  port: 8081
+spring:
+  datasource:
+    url: jdbc:mysql://192.168.0.59:3307/warehouse?characterEncoding=utf8
+    username: root
+    password: 123456
+  cloud:
+    alibaba:
+      seata:
+        # Seata 事务组名称，对应file.conf文件中 vgroup_mapping.tx_seata_group
+        tx-service-group: tx_seata_group
+    zookeeper:
+      connect-string: localhost:2181
+  application:
+    name: warehouse-service
