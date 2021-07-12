@@ -1,0 +1,5 @@
+CREATE TABLE `t_order` (
+    `id` bigint(11) NOT NULL AUTO_INCREMENT,
+    `content` varchar(255) DEFAULT NULL,
+    PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
