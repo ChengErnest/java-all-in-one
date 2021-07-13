@@ -14,6 +14,7 @@
         <module>zookeeper</module>
         <module>seata</module>
         <module>canal</module>
+        <module>rocketmq</module>
     </modules>
 	<packaging>pom</packaging>
 	<name>java-all-in-one</name>

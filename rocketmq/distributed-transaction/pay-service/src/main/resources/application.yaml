@@ -1,0 +1,29 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    url: jdbc:mysql://192.168.0.59:3307/warehouse?characterEncoding=utf8
+    username: root
+    password: 123456
+  cloud:
+    zookeeper:
+      connect-string: localhost:2181
+  application:
+    name: warehouse-service
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 10000
+        readTimeout: 600000
+#producer
+rocketmq:
+  name-server: 192.168.0.51:9876
+  producer:
+    group: pay-group
+    send-message-timeout: 300000
+    compress-message-body-threshold: 4096
+    max-message-size: 4194304
+    retry-times-when-send-async-failed: 0
+    retry-next-server: true
+    retry-times-when-send-failed: 2
