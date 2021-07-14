@@ -10,7 +10,7 @@ import org.apache.rocketmq.spring.core.RocketMQListener;
 import org.apache.rocketmq.spring.core.RocketMQPushConsumerLifecycleListener;
 import org.springframework.stereotype.Component;
 
-import java.io.UnsupportedEncodingException;
+import java.nio.charset.StandardCharsets;
 import java.util.List;
 
 @Component
@@ -34,15 +34,11 @@ public class OrderResultListener implements
     public void prepareStart(DefaultMQPushConsumer consumer) {
         consumer.registerMessageListener(new MessageListenerConcurrently() {
             @Override
-            public ConsumeConcurrentlyStatus consumeMessage(List<MessageExt>
-                                                                    msgs, ConsumeConcurrentlyContext context) {
-                try {
-                    for (MessageExt msg : msgs) {
-                        String result = new String(msg.getBody(), "UTF-8");
-                        System.out.println("result:" + result);
-                    }
-                } catch (UnsupportedEncodingException e) {
-                    e.printStackTrace();
+            public ConsumeConcurrentlyStatus consumeMessage(
+                    List<MessageExt> msgs, ConsumeConcurrentlyContext context) {
+                for (MessageExt msg : msgs) {
+                    String result = new String(msg.getBody(), StandardCharsets.UTF_8);
+                    System.out.println("result:" + result);
                 }
                 //消费状态
                 return ConsumeConcurrentlyStatus.CONSUME_SUCCESS;

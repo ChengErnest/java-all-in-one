@@ -9,6 +9,8 @@ import org.apache.rocketmq.spring.core.RocketMQLocalTransactionState;
 import org.springframework.messaging.Message;
 import org.springframework.stereotype.Component;
 
+import java.nio.charset.StandardCharsets;
+
 @Component
 @RocketMQTransactionListener(txProducerGroup = "rocket")
 public class TransactionListenerImpl implements RocketMQLocalTransactionListener {
@@ -26,12 +28,12 @@ public class TransactionListenerImpl implements RocketMQLocalTransactionListener
      * @return
      */
     @Override
-    public RocketMQLocalTransactionState executeLocalTransaction(Message
-                                                                         message, Object o) {
+    public RocketMQLocalTransactionState executeLocalTransaction(
+            Message message, Object o) {
         try {
             //================本地事务操作开始=======================
             //将o转成PayLog
-            String result = new String((byte[]) message.getPayload(), "UTF-8");
+            String result = new String((byte[]) message.getPayload(), StandardCharsets.UTF_8);
             PayLog payLog = JSON.parseObject(result, PayLog.class);
             payLogService.log(payLog);
             //================本地事务操作结束========================
