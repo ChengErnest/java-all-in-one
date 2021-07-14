@@ -5,17 +5,6 @@ spring:
     url: jdbc:mysql://192.168.0.78:3306/order?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=GMT%2B8
     username: root
     password: 123456
-  cloud:
-    zookeeper:
-      connect-string: localhost:2181
-  application:
-    name: pay-service
-feign:
-  client:
-    config:
-      default:
-        connectTimeout: 10000
-        readTimeout: 600000
 #producer
 rocketmq:
   name-server: 159.75.95.30:9876

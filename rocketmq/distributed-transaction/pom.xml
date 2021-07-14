@@ -15,7 +15,6 @@
         <module>pay-api</module>
         <module>pay-service</module>
         <module>order-rocketmq-service</module>
-        <module>zk-register</module>
     </modules>
 
     <properties>
