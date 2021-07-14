@@ -5,6 +5,13 @@ spring:
     url: jdbc:mysql://192.168.0.78:3306/order?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=GMT%2B8
     username: root
     password: 123456
+# ====================MybatisPlus====================
+mybatis-plus:
+  mapper-locations: mapper/*.xml
+  type-aliases-package: cn.nicollcheng.rocketmq.transaction.entity
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 #producer
 rocketmq:
   name-server: 159.75.95.30:9876
