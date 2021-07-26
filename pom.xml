@@ -15,7 +15,8 @@
         <module>seata</module>
         <module>canal</module>
         <module>rocketmq</module>
-    </modules>
+        <module>jvm</module>
+	</modules>
 	<packaging>pom</packaging>
 	<name>java-all-in-one</name>
 	<description>java-all-in-one</description>
