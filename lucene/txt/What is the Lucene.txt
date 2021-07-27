@@ -1,0 +1,1 @@
+Apache Lucene is a high-performance, fully functional, full-text search engine kit written entirely in Java. Lucene allows programmers to quickly develop a full-text search function

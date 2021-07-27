@@ -1,0 +1,1 @@
+You can use Lucene for full-text retrieval. Lucene is an open source full text search engine toolkit under Apache. It can provide multiple API interfaces for applications to call, which can be simply understood as a set of class libraries to achieve full text search

@@ -16,6 +16,7 @@
         <module>canal</module>
         <module>rocketmq</module>
         <module>jvm</module>
+		<module>lucene</module>
 	</modules>
 	<packaging>pom</packaging>
 	<name>java-all-in-one</name>

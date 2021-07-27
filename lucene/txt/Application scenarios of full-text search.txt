@@ -1,0 +1,1 @@
+For data with large data volume and unfixed data structure, full-text search can be used, such as baidu, Google and other search engines, forum site search, e-commerce site search, etc

@@ -1,0 +1,1 @@
+In full-text retrieval, the words in the target data to be queried are extracted to form an index, and the goal of searching target data is achieved by querying the index. This process of creating an index and then searching the index is called full-text Search.
