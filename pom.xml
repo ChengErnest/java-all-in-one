@@ -17,7 +17,8 @@
         <module>rocketmq</module>
         <module>jvm</module>
 		<module>lucene</module>
-	</modules>
+        <module>elasticsearch</module>
+    </modules>
 	<packaging>pom</packaging>
 	<name>java-all-in-one</name>
 	<description>java-all-in-one</description>
