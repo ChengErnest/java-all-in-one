@@ -18,6 +18,7 @@
         <module>jvm</module>
 		<module>lucene</module>
         <module>elasticsearch</module>
+        <module>ip-location</module>
     </modules>
 	<packaging>pom</packaging>
 	<name>java-all-in-one</name>
