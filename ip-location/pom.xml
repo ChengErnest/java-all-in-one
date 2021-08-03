@@ -10,7 +10,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>ip-location</artifactId>
-    <description>纯真IP归属地</description>
+    <description>
+        ip2region IP归属地
+        项目依赖于 ip2region-spring-boot-starter,使用该项目时
+        先将ip2region-spring-boot-starter install到本地maven仓库
+    </description>
 
     <dependencies>
         <dependency>
@@ -23,9 +27,9 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.github.hiwepy</groupId>
+            <groupId>cn.nicollcheng.ip2region</groupId>
             <artifactId>ip2region-spring-boot-starter</artifactId>
-            <version>1.0.4.RELEASE</version>
+            <version>1.0.0-RELEASE</version>
         </dependency>
     </dependencies>
 </project>

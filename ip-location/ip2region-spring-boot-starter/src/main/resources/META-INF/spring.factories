@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  cn.nicollcheng.ip2region.Ip2RegionAutoConfiguration
