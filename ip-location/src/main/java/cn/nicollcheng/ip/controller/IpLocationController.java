@@ -1,8 +1,8 @@
 package cn.nicollcheng.ip.controller;
 
 import cn.nicollcheng.ip.ip2region.RegionInfo;
+import cn.nicollcheng.ip2region.Ip2regionTemplate;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.github.hiwepy.ip2region.spring.boot.IP2regionTemplate;
 import org.nutz.plugins.ip2region.DataBlock;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -16,9 +16,9 @@ import java.io.IOException;
 @RestController
 public class IpLocationController {
 
-    private final IP2regionTemplate ip2regionTemplate;
+    private final Ip2regionTemplate ip2regionTemplate;
 
-    public IpLocationController(IP2regionTemplate ip2regionTemplate) {
+    public IpLocationController(Ip2regionTemplate ip2regionTemplate) {
         this.ip2regionTemplate = ip2regionTemplate;
     }
 
