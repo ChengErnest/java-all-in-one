@@ -19,6 +19,7 @@
 		<module>lucene</module>
         <module>elasticsearch</module>
         <module>ip-location</module>
+        <module>serialize</module>
     </modules>
 	<packaging>pom</packaging>
 	<name>java-all-in-one</name>

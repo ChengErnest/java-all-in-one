@@ -1,0 +1,9 @@
+{"namespace": "cn.nicollcheng.serialize.avro",
+ "type": "record",
+ "name": "PersonAvro",
+ "fields": [
+     {"name": "name", "type": "string"},
+     {"name": "id",  "type": ["int", "null"]},
+     {"name": "email", "type": ["string", "null"]}
+ ]
+}
